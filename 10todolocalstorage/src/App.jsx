@@ -53,7 +53,7 @@ function App() {
           <div className="flex flex-wrap gap-y-3">
             {todos.map((todo) => (
               <div className="w-full" key={todo.id}>
-                <TodoItem></TodoItem>
+                <TodoItem todo={todo}></TodoItem>
               </div>
             ))}
           </div>
