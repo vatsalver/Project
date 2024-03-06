@@ -10,7 +10,7 @@ import Login from "./Login";
 import Button from "./Button";
 import PostForm from "./post-form/PostForm";
 import PostCard from "./PostCard";
-import Protected from "./AuthLayout";
+import AuthLayout from "./AuthLayout";
 import Input from "./Input";
 export {
     Header,
@@ -24,7 +24,7 @@ export {
     Button,
     PostForm,
     PostCard,
-    Protected,
+    AuthLayout,
     Input,
     Select,
 }
