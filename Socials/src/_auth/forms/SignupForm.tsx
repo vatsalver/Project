@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { z } from "zod";
 
 const SignupForm = () => {
+  const formSchema = z.object({
+    username: z.string().min(2).max(50),
+  });
   return (
     <div>
       <Button>Click me</Button>
