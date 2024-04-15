@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function RegisterPage() {
   const [name, setName] = useState("");
   const [email, setemail] = useState("");
   const [password, setPassword] = useState("");
-  function registerUser() {}
+  function registerUser(e) {
+    e.preventDefault();
+    axios.get("http://localhost:4000/test");
+  }
   return (
     <>
       <div className="mt-4 grow flex items-center justify-around">
@@ -30,7 +34,7 @@ function RegisterPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             ></input>
-            <button className="primary">Login</button>
+            <button className="primary">Register</button>
             <div className="text-center py-2 text-gray-500">
               Already Have an account ?
               <Link className="underline text-black p-2" to={"/login"}>
