@@ -1,2 +1,2 @@
 # Project
- Just Learning React With Vite
+ MINI PROJECTS
